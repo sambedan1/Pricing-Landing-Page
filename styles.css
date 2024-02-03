@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.plan {
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 25%;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.price {
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+.features {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li {
+    margin: 10px 0;
+    color: #555;
+}
+
+.buy-button {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: 2px solid #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.customization-form {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.customization-form label {
+    margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .pricing-plans {
+        flex-direction: column;
+    }
+
+    .plan {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
